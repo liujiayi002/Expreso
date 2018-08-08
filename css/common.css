@@ -1,0 +1,209 @@
+/*base*/
+body, html {
+    background: #fffcf4;
+}
+body, html{
+    min-width: 1300px;
+}
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+
+.font-12 {
+    font-size: 12px;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+.font-16 {
+    font-size: 16px;
+}
+
+.font-18 {
+    font-size: 18px;
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+/*头部*/
+#head{
+    z-index: 99;
+    transition: all 1s;
+    background: #fffcf4;
+}
+.header {
+    width: 100%;
+    height: 156px;
+}
+
+.header .inner {
+    position: relative;
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.header .inner .logo {
+    margin-top: 44px;
+    width: 220px;
+    height: 63px;
+}
+
+.header .inner .menu {
+    position: relative;
+    margin-top: 68px;
+    width: 770px;
+    height: 100%;
+}
+
+.header .inner .menu ul {
+    display: flex;
+    width: 900px;
+}
+
+.header .inner .menu li {
+    position: relative;
+    margin-right: 40px;
+    float: left;
+    transition: 0.2s all linear;
+}
+
+.header .inner .menu li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 0;
+    height: 100%;
+    transition: 0.2s all linear;
+    border-bottom: 3px solid #c69c6d;
+}
+
+.header .inner .menu li:hover::before {
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition-delay: 0.1s;
+    border-bottom-color: #c69c6d;
+}
+
+.header .inner .menu li:hover ~ li::before {
+    left: 0;
+}
+
+.header .inner .menu li:active {
+    background: #000;
+}
+.header .inner .menu li:active a{
+    color: #fff;
+}
+
+.header .inner .menu li a {
+    display: block;
+    height: 64px;
+    text-align: center;
+    line-height: 62px;
+    font-size: 16px;
+    color: #000;
+}
+
+.header .inner .menu .active {
+    border-bottom: 3px solid #c69c6d;
+}
+
+.header .inner .menu .nav-search {
+    position: absolute;
+    right: 0;
+    top: 14px;
+}
+
+.header .inner .menu .nav-search input[type='text'] {
+    width: 0;
+    height: 32px;
+    border-radius: 32px;
+    background: #fffcf4;
+    padding: 0 25px 0 10px;
+    line-height: 32px;
+    transition: 1s;
+}
+
+.header .inner .menu .nav-search:hover input {
+    width: 320px;
+    border: 1px solid red;
+}
+
+.header .inner .menu .nav-search button {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    height: 16px;
+    width: 16px;
+    background: url("../img/search.png") no-repeat;
+}
+
+.header .inner .info {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.header .inner .info p {
+    display: inline-block;
+    padding-left: 16px;
+}
+
+.header .inner .info .mail {
+    background: url("../img/mail.png") no-repeat left center;
+}
+
+.header .inner .info .phone {
+    background: url("../img/phone.png") no-repeat left center;
+}
+
+.header .inner .info span {
+    padding: 0 8px;
+}
+
+/*标题*/
+.title-box .title{
+    font-size: 30px;
+    color: #000;
+    text-align: center;
+    margin-top: 66px;
+}
+.title-box .title-info{
+    font-size: 22px;
+    color: #444;
+    width: 760px;
+    text-align: center;
+    margin: 20px auto 0;
+}
+.title-box .line-dot{
+    width: 110px;
+    height: 15px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.line{
+    display: inline-block;
+    width: 44px;
+    height: 1px;
+    background: #47484a;
+}
+.dot{
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: #47484a;
+}

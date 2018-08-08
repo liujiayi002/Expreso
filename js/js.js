@@ -1,5 +1,5 @@
 /*头部*/
-/*function head() {
+function head() {
     var scrollFunc = function (e) {
         var head = document.getElementById('head');
         e = e || window.event;
@@ -28,11 +28,11 @@
 //滚动滑轮触发scrollFunc方法  //ie 谷歌
     window.onmousewheel = document.onmousewheel = scrollFunc;
 }
-head();*/
+head();
 
 
 /*图片筛选*/
-/*function catagopy() {
+function catagopy() {
 
     var aBtn = document.getElementById('catagopy-btn');
     var aLi = aBtn.getElementsByTagName('li');
@@ -92,11 +92,11 @@ head();*/
         }
     };
 }
-catagopy();*/
+catagopy();
 
 
 /*博客轮播*/
-/*function blog() {
+function blog() {
     var box = document.getElementById('blog-box');
     var prev = document.getElementById('blog-prev');
     var next = document.getElementById('blog-next');
@@ -123,11 +123,11 @@ catagopy();*/
     };
 
 }
-blog();*/
+blog();
 
 
 /*商标轮播*/
-/*function icon() {
+function icon() {
     var aUl = document.getElementById('icon-ul');
     var ali = aUl.getElementsByTagName('li');
 
@@ -165,7 +165,7 @@ blog();*/
         move();
     };
 }
-icon();*/
+icon();
 
 
 

@@ -108,12 +108,14 @@ body, html{
 }
 
 .header .inner .menu li a {
+    position: relative;
     display: block;
     height: 64px;
     text-align: center;
     line-height: 62px;
     font-size: 16px;
     color: #000;
+    z-index: 10;
 }
 
 .header .inner .menu .active {
@@ -133,7 +135,7 @@ body, html{
     background: #fffcf4;
     padding: 0 25px 0 10px;
     line-height: 32px;
-    transition: 1s;
+    transition: width 1s;
 }
 
 .header .inner .menu .nav-search:hover input {

@@ -2,24 +2,56 @@
 function head() {
     var scrollFunc = function (e) {
         var head = document.getElementById('head');
+        var marginTop = document.getElementsByClassName('margin-top')[0];
         e = e || window.event;
         if (e.wheelDelta) {  //第一步：先判断浏览器IE，谷歌滑轮事件
             if (e.wheelDelta > 0) { //当滑轮向上滚动时
                 head.style.position='fixed';
                 head.style.top='-30px';
+                marginTop.style.marginTop='156px';
             }
             if (e.wheelDelta < 0) { //当滑轮向下滚动时
                 head.style.top='-200px';
+                marginTop.style.marginTop='156px';
             }
         } else if (e.detail) {  //Firefox滑轮事件
             if (e.detail> 0) { //当滑轮向上滚动时
                 head.style.position='fixed';
                 head.style.top='-30px';
+                marginTop.style.marginTop='156px';
             }
             if (e.detail< 0) { //当滑轮向下滚动时
                 head.style.top='-200px';
+                marginTop.style.marginTop='156px';
             }
         }
+        var menu = document.getElementsByClassName('menu')[0];
+        var oA = menu.getElementsByTagName('a');
+
+
+
+        oA[0].onclick=function(){
+        };
+        oA[1].onclick=function(){
+            head.style.top='-200px';
+        };
+        oA[2].onclick=function(){
+            head.style.top='-200px';
+        };
+        oA[3].onclick=function(){
+            head.style.top='-200px';
+        };
+        oA[4].onclick=function(){
+            head.style.top='-200px';
+        };
+        oA[5].onclick=function(){
+            head.style.top='-200px';
+        };
+        oA[6].onclick=function(){
+            head.style.top='-200px';
+        };
+
+
     }
 //给页面绑定滑轮滚动事件
     if (document.addEventListener) {//firefox
@@ -27,6 +59,8 @@ function head() {
     }
 //滚动滑轮触发scrollFunc方法  //ie 谷歌
     window.onmousewheel = document.onmousewheel = scrollFunc;
+
+
 }
 head();
 
@@ -52,14 +86,14 @@ function catagopy() {
             img[i].style.width = 0 + 'px';
         }
     }
-    aLi[0].onmouseover=function(){
+    aLi[0].onclick=function(){
         aLiFunction();
         for (i = 0; i < img.length; i++) {
             img[i].style.width = 25 + '%';
         }
         this.className='on';
     };
-    aLi[1].onmouseover=function () {
+    aLi[1].onclick=function () {
         aLiFunction();
         imgFunction();
         for (n = 0; n < wordpress.length; n++) {
@@ -67,7 +101,7 @@ function catagopy() {
         }
         this.className='on';
     };
-    aLi[2].onmouseover=function () {
+    aLi[2].onclick=function () {
         aLiFunction();
         imgFunction();
         for (n = 0; n < joomla.length; n++) {
@@ -75,7 +109,7 @@ function catagopy() {
         }
         this.className='on';
     };
-    aLi[3].onmouseover=function () {
+    aLi[3].onclick=function () {
         aLiFunction();
         imgFunction();
         for(n=0;n<magento.length;n++){
@@ -84,7 +118,7 @@ function catagopy() {
         this.className='on';
     };
 
-    aLi[4].onmouseover=function () {
+    aLi[4].onclick=function () {
         aLiFunction();
         imgFunction();
         for(n=0;n<design.length;n++){

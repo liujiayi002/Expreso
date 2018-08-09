@@ -126,6 +126,7 @@ body, html{
     position: absolute;
     right: 0;
     top: 14px;
+    z-index: 11;
 }
 
 .header .inner .menu .nav-search input[type='text'] {

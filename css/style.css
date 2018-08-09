@@ -693,36 +693,87 @@
     width: 80%;
 }
 
-.skill .inner .lside .box .span-box:hover .span1 {
-    animation: skill 1s;
+.skill .inner .lside .box .span-box:hover .wordpress {
+    animation: skill-1 1s;
+}
+@keyframes skill-1 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 80%
+    }
 }
 
 .skill .inner .lside .box .html {
     width: 90%;
 }
 
-.skill .inner .lside .box .css {
-    width: 85%;
+.skill .inner .lside .box .span-box:hover .html {
+    animation: skill-2 1s;
 }
-
-.skill .inner .lside .box .javascript {
-    width: 70%;
-}
-
-.skill .inner .lside .box .php {
-    width: 75%;
-}
-
-.skill .inner .lside .box .design {
-    width: 90%;
-}
-
-@keyframes skill {
+@keyframes skill-2 {
     from {
         width: 0;
     }
     to {
-        width: 100%
+        width: 90%
+    }
+}
+.skill .inner .lside .box .css {
+    width: 85%;
+}
+.skill .inner .lside .box .span-box:hover .css {
+    animation: skill-3 1s;
+}
+@keyframes skill-3 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 85%
+    }
+}
+.skill .inner .lside .box .javascript {
+    width: 70%;
+}
+.skill .inner .lside .box .span-box:hover .javascript {
+    animation: skill-4 1s;
+}
+@keyframes skill-4 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 70%
+    }
+}
+.skill .inner .lside .box .php {
+    width: 75%;
+}
+.skill .inner .lside .box .span-box:hover .php {
+    animation: skill-5 1s;
+}
+@keyframes skill-5 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 75%
+    }
+}
+.skill .inner .lside .box .design {
+    width: 90%;
+}
+.skill .inner .lside .box .span-box:hover .design {
+    animation: skill-6 1s;
+}
+@keyframes skill-6 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 90%
     }
 }
 
@@ -840,6 +891,11 @@
     float: left;
     background: #111;
     padding: 16px;
+    transition: 1s;
+}
+.price .price-box:hover{
+    box-shadow: 0 0 4px 1px #000;
+    transform: scale(1.1,1.1);
 }
 
 .price .price-box:last-child {

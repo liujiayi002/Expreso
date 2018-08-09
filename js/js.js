@@ -202,4 +202,18 @@ function icon() {
 icon();
 
 
+/*banner*/
+function banner() {
+    var banner = document.getElementsByClassName('banner')[0];
+    setInterval(function () {
+        if(banner.style.backgroundImage.match('3')){
+            banner.style.backgroundImage='url(img/banner-4.png)';
+        }else if(banner.style.backgroundImage.match('4')){
+            banner.style.backgroundImage='url(img/banner-2.png)';
+        }else{
+            banner.style.backgroundImage='url(img/banner-3.png)';
+        }
+    },5000)
+}
+banner();
 

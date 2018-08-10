@@ -124,6 +124,7 @@ function catagopy() {
         for(n=0;n<design.length;n++){
             design[n].style.width= 25 +'%';
         }
+        this.className='on';
     };
 }
 catagopy();

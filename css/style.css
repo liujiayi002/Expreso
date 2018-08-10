@@ -408,7 +408,8 @@
     width: 25%;
     height: 0;
     padding-bottom: 14%;
-    transition: all 1s;
+    transition: all .5s;
+    overflow: hidden;
 }
 
 .catagopy .img-list li img {
@@ -892,7 +893,7 @@
     float: left;
     background: #111;
     padding: 16px;
-    transition: 1s;
+    transition: .5s;
 }
 .price .price-box:hover{
     box-shadow: 0 0 4px 1px #000;
